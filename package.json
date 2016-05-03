@@ -1,6 +1,6 @@
 {
   "name": "good-logstash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "git://github.com/fhemberger/good-logstash",
   "description": "Logstash TCP/UDP broadcasting for Good process monitor",
   "main": "lib/index.js",
