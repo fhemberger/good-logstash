@@ -1,6 +1,6 @@
 {
   "name": "good-logstash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "git://github.com/fhemberger/good-logstash",
   "description": "Logstash TCP/UDP broadcasting for Good process monitor",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
     "lab": "10.x.x"
   },
   "peerDependencies": {
-    "good": "7.0.0-rc1"
+    "good": "7.0.0"
   },
   "engines": {
     "node": ">=4.0.0"
