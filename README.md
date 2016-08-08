@@ -12,6 +12,8 @@ Logstash TCP/UDP broadcasting for Good process monitor.
 ### Example
 
 ```javascript
+// server.js
+
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 server.connection();
@@ -47,6 +49,34 @@ server.register({
 
 ```
 
+
+```
+# logstash.conf
+
+input {
+  udp {
+    port => 5000
+    codec => "json"
+  }
+}
+
+filter {
+  json {
+    source => "message"
+  }
+  if [codec] == "json" {
+    date {
+      match => ["timestamp", "UNIX_MS"]
+      remove_field => ["timestamp"]
+    }
+  }
+}
+
+output {
+  elasticsearch { hosts => "elasticsearch" }
+  stdout { codec => rubydebug }
+}
+```
 
 ## Good Logstash
 ### GoodLogstash (endpoint)
