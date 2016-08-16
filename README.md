@@ -27,7 +27,10 @@ const options = {
             args: [{ log: '*' }]
         }, {
             module: 'good-logstash',
-            args: ['udp://prod.logs:8009']
+            args: [
+              'udp://prod.logs:8009',
+              { tags: ['env:production', 'my-service'] }
+            ]
         }]
     }
 };
@@ -84,6 +87,8 @@ output {
 Creates a new GoodLogstash object where:
 
 - `endpoint` - TCP or UDP logging endpoint (defaults to `tcp://localhost:8008`)
+- `options`:
+  - `tags` - Array of additional global tags send to Logstash *(optional)*
 
 
 ## License
