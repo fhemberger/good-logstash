@@ -9,7 +9,7 @@
     "test-cov-html": "lab -m 5000 -r html -o coverage.html -La code"
   },
   "dependencies": {
-    "fast-safe-stringify": "1.0.9",
+    "fast-safe-stringify": "1.1.0",
     "logstash-client": "1.0.1"
   },
   "devDependencies": {
