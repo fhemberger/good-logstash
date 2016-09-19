@@ -1,20 +1,16 @@
 {
   "name": "good-logstash",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": "git://github.com/fhemberger/good-logstash",
   "description": "Logstash TCP/UDP broadcasting for Good process monitor",
   "main": "lib/index.js",
-  "scripts": {
-    "test": "lab -m 5000 -t 100 -v -La code",
-    "test-cov-html": "lab -m 5000 -r html -o coverage.html -La code"
-  },
   "dependencies": {
-    "fast-safe-stringify": "1.1.0",
-    "logstash-client": "1.0.1"
+    "fast-safe-stringify": "^1.1.0",
+    "logstash-client": "^1.1.0"
   },
   "devDependencies": {
-    "code": "2.x.x",
-    "lab": "10.x.x"
+    "code": "3.x.x",
+    "lab": "11.x.x"
   },
   "peerDependencies": {
     "good": "7.x.x"
