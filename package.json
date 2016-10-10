@@ -1,15 +1,15 @@
 {
   "name": "good-logstash",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "repository": "git://github.com/fhemberger/good-logstash",
   "description": "Logstash TCP/UDP broadcasting for Good process monitor",
   "main": "lib/index.js",
   "dependencies": {
     "fast-safe-stringify": "^1.1.0",
-    "logstash-client": "^1.1.0"
+    "logstash-client": "^1.1.1"
   },
   "devDependencies": {
-    "code": "3.x.x",
+    "code": "4.x.x",
     "lab": "11.x.x"
   },
   "peerDependencies": {
