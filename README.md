@@ -1,5 +1,7 @@
 # good-logstash
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fhemberger/good-logstash.svg)](https://greenkeeper.io/)
+
 Logstash TCP/UDP broadcasting for Good process monitor.
 
 ![Current Version](https://img.shields.io/npm/v/good-logstash.svg)
