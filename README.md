@@ -2,6 +2,7 @@
 
 Logstash TCP/UDP broadcasting for Good process monitor.
 
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/fhemberger/good-logstash/issues/5)
 ![Current Version](https://img.shields.io/npm/v/good-logstash.svg)
 
 
