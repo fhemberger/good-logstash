@@ -36,21 +36,22 @@ const options = {
     }
 };
 
-server.register({
-    register: require('good'),
-    options: options
-}, (err) => {
+const init = async () => {
+    await server.register({
+        register: require('good'),
+        options
+    });
 
-    if (err) {
-        console.error(err);
-    } else {
-        server.start(() => {
+    await server.start();
+    console.log(`Server running at: ${server.info.uri}`);
+};
 
-            console.info('Server started at ' + server.info.uri);
-        });
-    }
+process.on('unhandledRejection', (err) => {
+    console.log(err);
+    process.exit(1);
 });
 
+init();
 ```
 
 
